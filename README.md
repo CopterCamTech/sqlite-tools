@@ -6,7 +6,7 @@ This repository contains Python utilities for converting ArduPilot `.bin` log fi
 
 Here's a sample of the schema of the SQLite data base the script creates.  The image shows the database using the SQL Studio (Letos) app.
 
-![](/home/sqlite/flight-tools-sqlite/sqlite-tools/images/SQL Studio database schema.png)
+![](images/schema.png)
 
 The primary script, `bin-data-desc2sqlite.py`, dynamically builds tables based on MAVLink message types.
 
