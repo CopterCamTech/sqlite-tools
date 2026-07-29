@@ -1,20 +1,23 @@
 ﻿# CopterCamTech sqlite-tools
 
-Python scripts that create, read or report on SQLite databases that contain flight controller log file data.
+This repository contains Python scripts that create, read or report on SQLite databases that contain ArduPilot flight controller log file data.  Scripts for PX4 .ulg log files will be added in the future.
 
-This repository contains Python utilities for converting ArduPilot `.bin` log files into structured SQLite databases. 
+The SQLite database format makes browsing log files easy using tools such as `SQLite Studio` and `DB Browser for SQLite`.  Storing log data in SQLite also simplifies writing analysis scripts and SQL based reports.
+
+## bin-data-desc2sqlite.py
+
+`bin-data-desc2sqlite.py` reads ArduPilot .bin log files and creates a SQLite database.  The database schema follows the structure of the ArduPilot .bin log files by creating tables for each message type.
 
 Here's a sample of the schema of the SQLite data base the script creates.  The image shows the database using the SQL Studio (Letos) app.
 
 ![](images/schema.png)
 
-The primary script, `bin-data-desc2sqlite.py`, dynamically builds tables based on MAVLink message types.
 
-The script  `bin-data-desc2sqlite.py`  scrapes the ArduPilot documentation page https://ardupilot.org/copter/docs/logmessages.html to populate a table describing each field.
+This script supplements the database schema by adding the table `descriptions` to contain the units and description of each message type field name.
 
-The 
+This allows using SQL joins to include units and field descriptions to reports.
 
-These tools are intended for Python users who are comfortable working with virtual environments and installing dependencies.
+The descriptions are taken from the ArduPilot documentation page https://ardupilot.org/copter/docs/logmessages.html by web scraping.
 
 ---
 
