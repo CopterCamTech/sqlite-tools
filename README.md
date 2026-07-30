@@ -21,7 +21,7 @@ The descriptions are taken from the ArduPilot documentation page https://ardupil
 
 ---
 
-## Features
+## ⚙️ Features
 
 - Converts ArduPilot `.bin` logs into SQLite `.db` files  
 - Dynamically creates tables based on MAVLink message types  
@@ -32,7 +32,7 @@ The descriptions are taken from the ArduPilot documentation page https://ardupil
 
 ---
 
-## Requirements
+## 🔍 Requirements
 
 Install dependencies using: pip install -r requirements.txt
 
@@ -45,7 +45,7 @@ The required packages are:
 
 ---
 
-## Usage
+## ▶️ Usage
 
 ### 1. Create and activate a virtual environment
 
@@ -76,7 +76,7 @@ Where:
 
 ---
 
-## Output
+## 📊 Output
 
 The generated SQLite database will contain:
 
@@ -91,7 +91,7 @@ This metadata makes browsing and understanding log fields significantly easier.
 
 ---
 
-## Future Tools
+## 🚀 Future Tools
 
 This repository may grow to include additional SQLite utilities such as:
 
@@ -101,6 +101,8 @@ This repository may grow to include additional SQLite utilities such as:
 
 ---
 
-## License
+## 📄 License
 
-This project is released under the MIT License. See `LICENSE` for details.
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute this software for any purpose, including commercial applications, provided that the copyright notice and license text are included with all copies or substantial portions of the software.
+
+For details, see the full license text in the `LICENSE` file.
