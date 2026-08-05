@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project-specific: generated SQLite databases
+*.db
+*.sqlite
+*.sqlite3
